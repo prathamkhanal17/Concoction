@@ -1,0 +1,9 @@
+{
+    "custom/caffeine": {
+        "format": "{}",
+        "interval": 5,
+        "exec": "/home/zoro/.config/waybar/scripts/caffeine_status.sh",
+        "on-click": "/home/zoro/.config/waybar/scripts/toggle_caffeine.sh",
+        "return-type": "json"
+    }
+}

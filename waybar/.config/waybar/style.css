@@ -1,0 +1,141 @@
+* {
+    border: none;
+    font-family: "FiraCode Nerd Font", "Noto Color Emoji", "Symbols Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 40, 40, 0.85);
+    color: #ebdbb2;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #ebdbb2;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #83a598;
+    color: #282828;
+}
+
+#workspaces button.urgent {
+    background-color: #fb4934;
+}
+
+#workspaces button.active {
+    background-color: #ebdbb2;
+    color: #282828;
+}
+
+#window {
+    padding: 0 15px;
+    margin: 0 10px;
+}
+
+/* --- Group Styling --- */
+#group\/center-group,
+#group\/right-group {
+    margin: 5px 3px;
+    background-color: transparent;
+}
+
+#group\/center-group *,
+#group\/right-group * {
+    padding: 0 15px;
+    color: #ebdbb2;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* Round the ends of the pills */
+#clock {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 10px;
+}
+
+#custom-weather {
+    margin: 0 10px;
+}
+
+#mpris {
+    margin: 0 10px;
+}
+
+#idle_inhibitor{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 10px;
+}
+
+#pulseaudio {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 10px;
+}
+
+#memory {
+    margin: 0 10px;
+}
+
+#cpu {
+    margin: 0 10px;
+}
+
+#disk {
+    margin: 0 10px;
+}
+
+#network {
+    margin: 0 10px;
+}
+#custom-logout,
+#backlight {
+    margin: 0 10px;
+}
+
+#battery {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 10px;
+}
+
+#tray {
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 5px 3px;
+    border-radius: 10px;
+}
+
+#custom-power {
+    background-color: #fb4934;
+    color: #282828;
+    padding: 0 10px;
+    margin: 5px 3px;
+    border-radius: 10px;
+}
+
+tooltip {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-radius: 10px;
+    border: 2px solid #83a598;
+    padding: 10px;
+}
+
+tooltip label {
+    color: #ebdbb2;
+}

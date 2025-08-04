@@ -1,0 +1,30 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "include": ["~/.config/waybar/modules/*.jsonc"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window","mpris"],
+    "modules-center": ["group/center-group"],
+    "modules-right": ["group/right-group", "tray", "custom/logout"],
+
+    "group/center-group": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock",
+            "custom/weather",
+            "idle_inhibitor"
+        ]
+    },
+
+    "group/right-group": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "memory",
+            "cpu",
+            "network",
+            "backlight",
+            "battery"
+        ]
+    }
+}
