@@ -1,6 +1,6 @@
 * {
     border: none;
-    font-family: "FiraCode Nerd Font", "Noto Color Emoji", "Symbols Nerd Font";
+    font-family: "FiraCode Nerd Font";
     font-size: 14px;
     min-height: 0;
 }
@@ -18,7 +18,7 @@ window#waybar {
     padding: 0 10px;
     background-color: transparent;
     color: #ebdbb2;
-    border-radius: 10px;
+    border-radius: 0;
     margin: 5px 0;
 }
 
@@ -70,6 +70,9 @@ window#waybar {
 #custom-weather {
     margin: 0 10px;
 }
+#bluetooth {
+    margin: 0 10px;
+}
 
 #mpris {
     margin: 0 10px;
@@ -88,6 +91,9 @@ window#waybar {
 }
 
 #memory {
+    margin: 0 10px;
+}
+#power-profiles-daemon {
     margin: 0 10px;
 }
 
@@ -129,7 +135,7 @@ window#waybar {
 }
 
 tooltip {
-    background-color: #282828;
+    background-color: rgba(40, 40, 40,0.95);
     color: #ebdbb2;
     border-radius: 10px;
     border: 2px solid #83a598;

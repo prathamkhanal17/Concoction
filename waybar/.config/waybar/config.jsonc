@@ -20,10 +20,10 @@
         "orientation": "horizontal",
         "modules": [
             "pulseaudio",
-            "memory",
-            "cpu",
             "network",
             "backlight",
+            "bluetooth",
+            "power-profiles-daemon",
             "battery"
         ]
     }

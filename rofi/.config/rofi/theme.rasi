@@ -1,0 +1,23 @@
+/**
+ * Gruvbox Dark (Hard) Theme
+ */
+
+* {
+    // Main Colors
+    main-bg:     #1d2021;
+    main-fg:     #fbf1c7;
+    main-br:     #504945;
+
+    // Selection Colors
+    select-bg:   #3c3836;
+    select-fg:   #fbf1c7;
+
+    // Accent Colors
+    red:         #cc241d;
+    green:       #98971a;
+    yellow:      #d79921;
+    blue:        #458588;
+    purple:      #b16286;
+    aqua:        #689d6a;
+    orange:      #d65d0e;
+}

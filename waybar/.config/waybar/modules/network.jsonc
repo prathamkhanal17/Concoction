@@ -1,6 +1,6 @@
 {
     "network": {
-        "format-wifi": " {essid}",
+        "format-wifi": " ",
         "format-ethernet": " {ifname}",
         "format-disconnected": "⚠ Disconnected",
         "tooltip-format": "{ifname} via {gwaddr} ",
