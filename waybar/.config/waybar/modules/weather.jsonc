@@ -1,6 +1,6 @@
 {
   "custom/weather": {
-    "exec": "~/.config/waybar/scripts/get_weather.py",
+    "exec": "/home/pratham/.config/waybar/scripts/get_weather.py",
     "tooltip": true,
     "format": "{0}",
     "interval": 30,
