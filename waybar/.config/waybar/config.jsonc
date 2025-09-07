@@ -2,29 +2,141 @@
     "layer": "top",
     "position": "top",
     "height": 35,
-    "include": ["~/.config/waybar/modules/*.jsonc"],
-    "modules-left": ["hyprland/workspaces", "hyprland/window","mpris"],
-    "modules-center": ["group/center-group"],
-    "modules-right": ["group/right-group", "tray", "custom/logout"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock", "mpris", "idle_inhibitor"],
+    "modules-right": [
+        "memory",
+        "pulseaudio",
+        "network",
+        "power-profiles-daemon",
+        "battery",
+        "backlight",
+    ],
 
-    "group/center-group": {
-        "orientation": "horizontal",
-        "modules": [
-            "clock",
-            "custom/weather",
-            "idle_inhibitor"
-        ]
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "urgent": "",
+            "focused": "",
+        }
     },
-
-    "group/right-group": {
-        "orientation": "horizontal",
-        "modules": [
-            "pulseaudio",
-            "network",
-            "backlight",
-            "bluetooth",
-            "power-profiles-daemon",
-            "battery"
-        ]
+    
+    "memory": {
+        "format": " {used:0.1f}G",
+        "interval": 1,
+        "on-click":"/home/pratham/.config/waybar/scripts/btop.sh"
+    },
+    "hyprland/window": {
+        "format": "{class}",
+        "max-length": 35,
+        "separate-outputs": true,
+        "tooltip":false,
+    },
+    "clock": {
+        "format-alt": "{:%H:%M}  ",
+        "format": "{:%A, %B %d, %Y %R}  ",
+        "tooltip":false,
+    },
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-paused": "{status_icon} <i>{title}</i>",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+        "max-length": 25,
+        "on-click-prev": "playerctl previous",
+        "on-click-play": "playerctl play-pause",
+        "on-click-next": "playerctl next",
+        "tooltip":false,
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol",
+        "tooltip":false,
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "",
+        "format-disconnected": "⚠",
+        // "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip":false,
+        "on-click": "nm-connection-editor"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_battery_percentage}%",
+        // "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        // "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        // "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "tooltip":false,
+        "on-click":"blueman-manager"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        // "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        // "tooltip": true,
+        "tooltip":false,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [""],
+        "tooltip":false,
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon}",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip":false,
+    },
+   "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    },
+    "tooltip":false,
+}, "tray": {
+        "icon-size": 18,
+        "spacing": 10,
+    "custom/logout": {
+        "format": "󰍃",
+        "tooltip": false,
+        "on-click": "wlogout -b 2"
     }
+}
 }

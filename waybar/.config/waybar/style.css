@@ -1,12 +1,14 @@
 * {
     border: none;
-    font-family: "FiraCode Nerd Font";
+    font-family: "FiraCode Nerd Font", "Noto Color Emoji", "Symbols Nerd Font";
     font-size: 14px;
     min-height: 0;
+    font-weight:bold;
 }
 
 window#waybar {
-    background-color: rgba(40, 40, 40, 0.85);
+    /*background-color: rgba(41, 40, 40, 0.85);*/
+    background-color: transparent;
     color: #ebdbb2;
     transition-property: background-color;
     transition-duration: .5s;
@@ -18,8 +20,9 @@ window#waybar {
     padding: 0 10px;
     background-color: transparent;
     color: #ebdbb2;
-    border-radius: 0;
+    border-radius: 10px;
     margin: 5px 0;
+    font-weight: bold;
 }
 
 #workspaces button:hover {
@@ -43,80 +46,46 @@ window#waybar {
 #window {
     padding: 0 15px;
     margin: 0 10px;
+    font-weight: bold;
 }
 
-/* --- Group Styling --- */
-#group\/center-group,
-#group\/right-group {
-    margin: 5px 3px;
-    background-color: transparent;
+#power-profiles-daemon,
+#clock,
+#mpris,
+#idle_inhibitor,
+#memory,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#backlight,
+#custom-logout {
+    padding: 0 10px;
+    margin: 5px 0;
 }
 
-#group\/center-group *,
-#group\/right-group * {
-    padding: 0 15px;
-    color: #ebdbb2;
-    background-color: transparent;
-    border-radius: 0;
-}
-
-/* Round the ends of the pills */
 #clock {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin: 0 10px;
 }
-
-#custom-weather {
-    margin: 0 10px;
-}
-#bluetooth {
-    margin: 0 10px;
+#power-profiles-daemonclock {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #mpris {
-    margin: 0 10px;
-}
-
-#idle_inhibitor{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin: 0 10px;
-}
-
-#pulseaudio {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin: 0 10px;
 }
 
 #memory {
-    margin: 0 10px;
-}
-#power-profiles-daemon {
-    margin: 0 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-#cpu {
-    margin: 0 10px;
-}
-
-#disk {
-    margin: 0 10px;
-}
-
-#network {
-    margin: 0 10px;
-}
-#custom-logout,
-#backlight {
-    margin: 0 10px;
-}
-
-#battery {
+#custom-logout {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin: 0 10px;
 }
 
 #tray {
@@ -126,16 +95,9 @@ window#waybar {
     border-radius: 10px;
 }
 
-#custom-power {
-    background-color: #fb4934;
-    color: #282828;
-    padding: 0 10px;
-    margin: 5px 3px;
-    border-radius: 10px;
-}
 
 tooltip {
-    background-color: rgba(40, 40, 40,0.95);
+    background-color: #282828;
     color: #ebdbb2;
     border-radius: 10px;
     border: 2px solid #83a598;
