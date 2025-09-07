@@ -1,6 +1,6 @@
 {
     "hyprland/window": {
-        "format": "{class}:{title}",
+        "format": "{class}",
         "max-length": 20,
         "separate-outputs": true
     }
