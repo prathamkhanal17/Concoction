@@ -3,7 +3,7 @@
         "format": " {usage}%",
         "tooltip": true,
         "interval": 1,
-        "on-click":"/home/prathamk/.config/waybar/scripts/btop.sh"
+        "on-click":"/home/pratham/.config/waybar/scripts/btop.sh"
 
     }
 }
