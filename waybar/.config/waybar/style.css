@@ -30,7 +30,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background-color: #83a598;
+    background-color: #cba6f7;
     color: #282828;
 }
 
@@ -39,7 +39,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: #cdd6f4;
+    background-color: #cba6f7;
     color: #282828;
 }
 
