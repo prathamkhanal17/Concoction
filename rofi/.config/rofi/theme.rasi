@@ -1,23 +1,23 @@
 /**
- * Gruvbox Dark (Hard) Theme
+ * Catppuccin Mocha (Mauve Accent) Theme
  */
 
 * {
     // Main Colors
-    main-bg:     #1d2021;
-    main-fg:     #fbf1c7;
-    main-br:     #504945;
+    main-bg:     #1e1e2e;
+    main-fg:     #cdd6f4;
+    main-br:     #313244;
 
     // Selection Colors
-    select-bg:   #3c3836;
-    select-fg:   #fbf1c7;
+    select-bg:   #45475a;
+    select-fg:   #cdd6f4;
 
     // Accent Colors
-    red:         #cc241d;
-    green:       #98971a;
-    yellow:      #d79921;
-    blue:        #458588;
-    purple:      #b16286;
-    aqua:        #689d6a;
-    orange:      #d65d0e;
+    red:         #f38ba8;
+    green:       #a6e3a1;
+    yellow:      #f9e2af;
+    blue:        #89b4fa;
+    purple:      #cba6f7; // Mauve accent
+    aqua:        #94e2d5; // Teal
+    orange:      #fab387; // Peach
 }
