@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to your wallpaper image
-WALLPAPER="$HOME/Pictures/wallpapers/nep.png"
+WALLPAPER="$HOME/Pictures/wallpapers/arch.png"
 
 # Check if swww is running, start it if not
 if ! pgrep -x "swww-daemon" >/dev/null; then

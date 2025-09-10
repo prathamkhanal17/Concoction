@@ -1,9 +1,9 @@
 {
     "network": {
         "format-wifi": " ",
+        "format-alt": "  {essid}",
         "format-ethernet": " {ifname}",
         "format-disconnected": "⚠ Disconnected",
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "on-click": "nm-connection-editor"
     }
 }

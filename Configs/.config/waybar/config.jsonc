@@ -1,0 +1,34 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "include": [
+        "./modules/backlight.jsonc",
+        "./modules/battery.jsonc",
+        "./modules/bluetooth.jsonc",
+        "./modules/clock.jsonc",
+        "./modules/cpu.jsonc",
+        "./modules/disk.jsonc",
+        "./modules/hyprland-window.jsonc",
+        "./modules/hyprland-workspaces.jsonc",
+        "./modules/idle_inhibitor.jsonc",
+        "./modules/logout.jsonc",
+        "./modules/memory.jsonc",
+        "./modules/mpris.jsonc",
+        "./modules/network.jsonc",
+        "./modules/power-profiles-daemon.jsonc",
+        "./modules/pulseaudio.jsonc",
+        "./modules/tray.jsonc",
+        "./modules/weather.jsonc"
+    ],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock", "mpris", "idle_inhibitor"],
+    "modules-right": [
+        "memory",
+        "pulseaudio",
+        "network",
+        "backlight",
+        "battery",
+        "power-profiles-daemon"
+    ]
+}
