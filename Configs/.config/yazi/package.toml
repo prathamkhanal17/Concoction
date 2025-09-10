@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "d7588f6"
+hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "b58c305"
+hash = "92dc8bdc3d9cbb36e03111b4cad231fc"
+
+[flavor]
+deps = []
