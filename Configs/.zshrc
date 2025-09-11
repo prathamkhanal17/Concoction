@@ -18,13 +18,5 @@ source $ZSH/oh-my-zsh.sh
  alias vim="nvim"
  alias del="trash-put"
  alias wifi="nmcli device wifi connect"
+ alias lg="lazygit"
 
-
-
-# pnpm
-export PNPM_HOME="/home/pratham/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
